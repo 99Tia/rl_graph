@@ -66,11 +66,16 @@ pip install -r requirements.txt
 
 ```
 
+## 📍 How to Find Project
+
+This project is located on the server at `~/code/ehr-rlgraph`. All datasets used in this work are available in the `~/code/ehr-rlgraph/data` directory. Before running any part of the pipeline, please activate the conda environment using `conda activate ehragent`. Once the environment is set up, you can proceed with executing the commands listed below.
+
+
 ## 🔑 Set API Keys
 
 ```bash
 export OPENAI_API_KEY=your_api_key
-export WOLFRAM_ALPHA_APPID=your_app_id   # optional
+export WOLFRAM_ALPHA_APPID=your_app_id  
 ```
 
 ---
