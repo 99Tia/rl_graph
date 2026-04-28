@@ -1,5 +1,5 @@
 # 🧠 EHR-RLGraph  
-### Graph Memory + RL Retrieval for EHR Question Answering
+### EHR-RLGRAPH: Graph-Memory-Based Reinforcement Learning Demonstration Selection for Complex Reasoning over Electronic Health Records
 
 <p align="center">
   <img src="https://img.shields.io/badge/Framework-LLM%20Agent-blue" />
