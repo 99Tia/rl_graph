@@ -9,6 +9,12 @@
 
 ---
 
+
+## 📝 About This README
+
+This README is intended to guide how to run the project. It first provides a brief introduction to the work, followed by step-by-step instructions for setting up and running the project on the server.
+
+
 ## 📌 Overview
 
 **EHR-RLGraph** is a large language model (LLM)–based agent for answering **complex clinical questions over structured Electronic Health Records (EHRs)**.
