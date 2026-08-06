@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Environments and secrets
+.env
+.env.*
+venv/
+.venv/
+
+# Editors and caches
+.vscode/
+.cache/
+
+# Logs and generated outputs
+*.log
+logs/
+logs_*/
+output/
+outputs/
+
+# EHR datasets and databases
+data/
+*.db
+*.sqlite
+*.sqlite3
+temp_adm_age.csv
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Experiment tracking
+wandb/
