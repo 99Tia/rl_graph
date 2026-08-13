@@ -99,19 +99,19 @@ export WOLFRAM_ALPHA_APPID=your_app_id
 ### ▶️ Step 1: Build Demonstrations
 
 ```bash
-python -m ehragent.build_dgt --dataset mimic_iii --llm gpt-4.1 --data_path <DATA_PATH> --out_path <DGT_JSONL> --graph_out <GRAPH_JSON> --logs_dir <LOG_DIR> --num_examples -1 --seed 42
+python -m ehr_rlgraph.build_dgt --dataset mimic_iii --llm gpt-4.1 --data_path <DATA_PATH> --out_path <DGT_JSONL> --graph_out <GRAPH_JSON> --logs_dir <LOG_DIR> --num_examples -1 --seed 42
 ```
 
 ### ▶️ Step 2: Train RL Retriever
 
 ```bash
-python -m ehragent.train_rl --dgt_jsonl <DGT_JSONL> --graph_path <GRAPH_JSON> --k 4 --num_train <NUM_TRAIN> --seed 42 --save_policy <POLICY_JSON>
+python -m ehr_rlgraph.train_rl --dgt_jsonl <DGT_JSONL> --graph_path <GRAPH_JSON> --k 4 --num_train <NUM_TRAIN> --seed 42 --save_policy <POLICY_JSON>
 ```
 
 ### ▶️ Step 3: Run Inference
 
 ```bash
-python ehragent/main.py --llm gpt-4.1 --dataset mimic_iii --data_path <DATA_PATH> --logs_path <LOG_DIR> --dgt_jsonl <DGT_JSONL> --graph_path <GRAPH_JSON> --policy_path <POLICY_JSON> --num_questions <N> --num_shots 4 --seed 42
+python ehr_rlgraph/main.py --llm gpt-4.1 --dataset mimic_iii --data_path <DATA_PATH> --logs_path <LOG_DIR> --dgt_jsonl <DGT_JSONL> --graph_path <GRAPH_JSON> --policy_path <POLICY_JSON> --num_questions <N> --num_shots 4 --seed 42
 ```
 
 ---
@@ -119,7 +119,7 @@ python ehragent/main.py --llm gpt-4.1 --dataset mimic_iii --data_path <DATA_PATH
 ## 📊 Evaluation
 
 ```bash
-python -m ehragent.evaluate --logs_path <LOG_DIR> --data_path <DATA_PATH> --id_to_level <LEVEL_JSON>
+python -m ehr_rlgraph.evaluate --logs_path <LOG_DIR> --data_path <DATA_PATH> --id_to_level <LEVEL_JSON>
 ```
 
 ---
