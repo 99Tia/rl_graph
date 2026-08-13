@@ -41,7 +41,9 @@ The agent dynamically retrieves **structurally relevant demonstrations**, genera
 ## 🔄 Framework Pipeline
 
 <p align="center">
-  <img src="assets/framework.png" width="80%" />
+  <a href="./EHR-RLGraph_Framework.pdf">
+    📄 <b>View Full EHR-RLGraph Framework</b>
+  </a>
 </p>
 
 The system operates in **three stages**:
